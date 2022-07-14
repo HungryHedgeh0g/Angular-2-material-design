@@ -1,11 +1,8 @@
-<mat-toolbar>
-    <mat-toolbar-row>
-        <span>Первая панель</span>
-    </mat-toolbar-row>
-    <mat-toolbar-row>
-        <span>Вторая панель</span>
-    </mat-toolbar-row>
-    <mat-toolbar-row>
-        <span>Третья панель</span>
-    </mat-toolbar-row>
-</mat-toolbar>
+<section class="section">
+    <h1>Пример toolbar</h1>
+    <mat-toolbar>
+        <mat-toolbar-row *ngFor="let tool of toolbarTitle">
+            <span>{{tool}}</span>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</section>
